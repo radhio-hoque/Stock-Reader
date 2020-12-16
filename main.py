@@ -51,6 +51,8 @@ def home(request: Request, forward_pe=None, dividend_yield=None, ma50=None, ma20
 
     stocks = stocks.all()
 
+    
+
     return templates.TemplateResponse("home.html", {
         "request": request,
         "stocks": stocks,
